@@ -1,0 +1,97 @@
+
+/*     background: linear-gradient(90deg,#9795EF,#F9C5D1) */
+.container{
+    max-width: 400px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 200px;
+    background-color: rgba(220, 220, 220, 0.4);
+    
+}
+
+.light-mode{
+    background: linear-gradient(90deg,#05043f,#612836);
+    color: #000;
+}
+
+#output{
+    font-size: 2rem;
+    text-align: right;
+    line-height: 70px;
+    height: 100px;
+    border-bottom: 1px solid rgb(188, 172, 172);
+
+}
+.buttons{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ border-bottom: 1px #eee;
+ height: 400px;
+ color: rgb(0, 0, 0);
+ 
+}
+.button{
+    text-align: center;
+    border-bottom: 1px solid rgb(188, 172, 172);
+    border-left: 1px #eee;
+    border-right: 1px solid rgb(188, 172, 172);
+    line-height: 70px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.border-none{
+    border-right: none;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all ease-in-out .2s;
+    transform: scale(1.02)
+}
+#equal{
+    background-color: rgb(28, 28, 210);
+    color: #fff;
+}
+#equal:hover{
+    background-color: rgb(8, 8, 125);
+    font-size: 1.7rem;
+}
+
+/* light-mode-button styles*/
+
+.light-mode-button{
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-top: 20px;
+}
+
+
+.light-mode-button span:nth-child(1) {
+ position: absolute;
+ top:0;
+ left: 0;
+ width: 70px;
+ height: 30px;
+ border-radius: 25px;
+ background-color: #d6d7db;
+ box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+ transition: all ease-in-out .3s;
+ padding: 5%;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top:5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: all ease-in-out .3s;
+    background-color: #fff;
+}
