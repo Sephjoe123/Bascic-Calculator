@@ -20,7 +20,7 @@
     line-height: 70px;
     height: 100px;
     border-bottom: 1px solid rgb(188, 172, 172);
-
+   
 }
 .buttons{
  display: grid;
@@ -51,47 +51,11 @@
 #equal{
     background-color: rgb(28, 28, 210);
     color: #fff;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: center;
 }
 #equal:hover{
     background-color: rgb(8, 8, 125);
-    font-size: 1.7rem;
-}
-
-/* light-mode-button styles*/
-
-.light-mode-button{
-    background: 0;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    height: 40px;
-    width: 100px;
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0);
-    margin-top: 20px;
-}
-
-
-.light-mode-button span:nth-child(1) {
- position: absolute;
- top:0;
- left: 0;
- width: 70px;
- height: 30px;
- border-radius: 25px;
- background-color: #d6d7db;
- box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
- transition: all ease-in-out .3s;
- padding: 5%;
-}
-
-.light-mode-button span:nth-child(2) {
-    position: absolute;
-    top:5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    transition: all ease-in-out .3s;
-    background-color: #fff;
+    transform: scale(1.05);
 }
