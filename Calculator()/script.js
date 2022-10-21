@@ -1,38 +1,38 @@
 let output = document.getElementById("output");
 let button = Array.from(document.getElementsByClassName("button"));
+let clear = document.getElementById("clear");
+let equal = document.getElementById("equal")
 
-button.map(button =>{
-    button.addEventListener("click", (e) =>{
+button.forEach(button =>{
+    button.addEventListener("click",(e) =>{
+
         switch(e.target.innerText){
-            default:
-            output.innerText += e.target.innerText;
-            break;
-
-            case "C":
-            output.innerText = e.target.innerText.slice(0,-1);
-            break;
-
             case "←":
-            output.innerText = output.innerText.slice(0,-1);
+            output.innerText = output.innerText.slice(0,-1)
             break;
 
-            case "=":
-            try{
-                output.innerText = eval(output.innerText);
-                break;
-            }
-            catch{
-                output.innerText = "Invalid!";
-            }
+            default:
+            output.innerText += e.target.innerText
             break;
-           
-        }
+           }
+        
     })
+
+    button.addEventListener("click",remove);
+    equal.addEventListener("click",compute);
+  
 })
 
-// dark mode
+function remove (e){
+if(e.target === clear){
+output.innerText = "";
+}
+}
 
-function darkMode() {
-    let changeToDarkMode = document.body;
-    changeToDarkMode.classList.toggle("light-mode");
+function compute(e){ 
+ if(e.target == equal){
+    output.innerText = eval(output.innerText); 
+
  }
+
+}
